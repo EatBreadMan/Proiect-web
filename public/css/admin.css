@@ -1,0 +1,77 @@
+/* --- Layout General Admin --- */
+.admin-layout {
+  display: flex;
+  height: 100vh; /* Ocupă tot ecranul pe înălțime */
+  overflow: hidden; /* Fără scroll pe toată pagina */
+}
+
+/* --- Sidebar --- */
+.admin-sidebar {
+  width: 260px;
+  background-color: #0f172a; /* Slate 900 - Un fundal foarte închis pentru admin */
+  color: #f8fafc;
+  display: flex;
+  flex-direction: column;
+  border-right: 1px solid #1e293b;
+}
+
+.admin-brand {
+  height: var(--nav-height, 70px);
+  display: flex;
+  align-items: center;
+  padding: 0 1.5rem;
+  font-size: 1.25rem;
+  border-bottom: 1px solid #1e293b;
+}
+
+/* Meniul de navigație */
+.admin-menu {
+  list-style: none;
+  padding: 1.5rem 0;
+  flex-grow: 1; /* Împinge butonul de logout în jos */
+}
+
+.admin-menu li a {
+  display: block;
+  padding: 0.75rem 1.5rem;
+  color: #cbd5e1;
+  text-decoration: none;
+  transition: background 0.2s, color 0.2s;
+}
+
+/* Efectul de Hover și Pagina Activă */
+.admin-menu li a:hover,
+.admin-menu li a.active {
+  background-color: #1e293b;
+  color: #ffffff;
+  border-left: 4px solid #dc2626; /* Accent roșu (poți folosi var(--color-cutremur)) */
+}
+
+/* Zona de Logout */
+.admin-logout {
+  padding: 1.5rem;
+  border-top: 1px solid #1e293b;
+}
+
+.btn-logout {
+  width: 100%;
+  padding: 10px;
+  background-color: transparent;
+  color: #f1f5f9;
+  border: 1px solid #334155;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.btn-logout:hover {
+  background-color: #334155;
+}
+
+/* --- Conținutul Principal (Dreapta) --- */
+.admin-content {
+  flex-grow: 1; /* Ocupă tot spațiul rămas */
+  background-color: #f4f6f8;
+  padding: 2rem;
+  overflow-y: auto; /* Permite scroll DOAR în zona de conținut */
+}

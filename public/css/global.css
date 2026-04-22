@@ -1,0 +1,199 @@
+
+:root {
+  /* Culori de fundal și text */
+  --bg-body: #f4f6f8;
+  --bg-card: #ffffff;
+  --text-main: #1e293b;
+  --text-muted: #64748b;
+  --border-color: #e2e8f0;
+  
+  /* Culori specifice pentru alerte */
+  --color-cutremur: #dc2626;   /* Roșu */
+  --color-inundatie: #d97706;  /* Portocaliu */
+  --color-incendiu: #0f766e;   /* Verde/Teal */
+  
+  /* Dimensiuni globale */
+  --nav-height: 70px;
+  --radius-md: 8px;
+}
+
+* { 
+  box-sizing: border-box; 
+  margin: 0; 
+  padding: 0; 
+}
+
+body {
+  font-family: 'Inter', 'Segoe UI', sans-serif;
+  background-color: var(--bg-body);
+  color: var(--text-main);
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; /* Asigură că footer-ul stă jos chiar dacă pagina e goală */
+}
+
+
+.navbar {
+  display: flex; 
+  justify-content: space-between; 
+  align-items: center;
+  height: var(--nav-height); 
+  padding: 0 2rem;
+  background-color: var(--bg-card); 
+  border-bottom: 1px solid var(--border-color);
+  position: sticky; 
+  top: 0; 
+  z-index: 100;
+}
+
+.logo { 
+  display: flex; 
+  align-items: center; 
+  gap: 4px; 
+  font-size: 1.25rem; 
+}
+
+.logo .dot { 
+  width: 8px; 
+  height: 8px; 
+  background-color: var(--color-cutremur); 
+  border-radius: 50%; 
+}
+
+.nav-links { 
+  display: flex; 
+  list-style: none; 
+  gap: 2rem; 
+}
+
+.nav-links a { 
+  text-decoration: none; 
+  color: var(--text-main); 
+  font-weight: 500; 
+  font-size: 0.95rem;
+}
+
+.btn-login { 
+  padding: 8px 24px; 
+  border: 1px solid var(--text-main); 
+  background: transparent; 
+  border-radius: var(--radius-md); 
+  cursor: pointer; 
+  font-weight: 500;
+}
+
+
+.filters-bar { 
+  display: flex; 
+  gap: 0.75rem; 
+  background-color: var(--bg-card); 
+  padding: 1rem; 
+  border-radius: var(--radius-md); 
+  border: 1px solid var(--border-color); 
+  flex-wrap: wrap; 
+}
+
+.filter-btn {
+  padding: 8px 16px;
+  border: 1px solid var(--border-color);
+  background-color: transparent;
+  color: var(--text-main);
+  border-radius: 20px; 
+  font-size: 0.95rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.filter-btn:hover {
+  background-color: var(--bg-body);
+}
+
+.filter-btn.active {
+  background-color: var(--text-main);
+  color: var(--bg-card);
+  border-color: var(--text-main);
+}
+
+
+.badge { 
+  padding: 4px 8px; 
+  border-radius: 4px; 
+  color: white; 
+  font-size: 0.75rem; 
+  font-weight: bold; 
+}
+
+.bg-red { background-color: var(--color-cutremur); }
+.bg-orange { background-color: var(--color-inundatie); }
+.bg-teal { background-color: var(--color-incendiu); }
+
+.text-red { 
+  color: var(--color-cutremur); 
+  font-size: 0.85rem; 
+  font-weight: 500;
+  margin-top: 4px;
+}
+
+
+.site-footer { 
+  background-color: #1e293b; 
+  color: #f8fafc; 
+  padding: 1.5rem 2rem; 
+  margin-top: auto; 
+}
+
+.footer-content { 
+  max-width: 1200px; 
+  margin: 0 auto; 
+  display: flex; 
+  justify-content: space-between; 
+  font-size: 0.85rem; 
+}
+
+.data-sources span { 
+  color: #94a3b8; 
+}
+
+
+.menu-toggle { display: none; }
+.mobile-login { display: none; }
+
+@media (max-width: 992px) {
+  /* Navbar de mobil */
+  .menu-toggle { 
+    display: block; 
+    font-size: 1.5rem; 
+    background: none; 
+    border: none; 
+    cursor: pointer; 
+    color: var(--text-main); 
+  }
+  
+  .desktop-login { display: none; }
+  
+  .nav-links { 
+    display: none; 
+    flex-direction: column; 
+    position: absolute; 
+    top: var(--nav-height); 
+    left: 0; 
+    width: 100%; 
+    background-color: var(--bg-card); 
+    border-bottom: 1px solid var(--border-color); 
+    padding: 1rem 0; 
+    box-shadow: 0 4px 6px -1px rgba(0,0,0,0.1); 
+  }
+  
+  .nav-links.active { display: flex; }
+  .nav-links li { text-align: center; padding: 0.75rem 0; }
+  .mobile-login { display: block; margin-top: 1rem; }
+  
+  /* Bara de filtre și Footer pe mobil */
+  .filters-bar { padding: 0.75rem; }
+  .footer-content { 
+    flex-direction: column; 
+    text-align: center; 
+    gap: 1rem; 
+  }
+}

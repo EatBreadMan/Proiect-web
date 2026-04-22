@@ -1,0 +1,86 @@
+.page-layout-split {
+    display: grid;
+    grid-template-columns: 1fr 450px;
+    height: calc(100vh - var(--nav-height) - 100px);
+    /* Ajustat pentru bara de filtre */
+    margin-top: 1.5rem;
+}
+
+.map-container {
+    background-color: #2c3e50;
+    position: relative;
+}
+
+.list-container {
+    background-color: var(--bg-card);
+    border-left: 1px solid var(--border-color);
+    padding: 1.5rem;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+/* Containerul cardului (Modificat pentru marginea stângă) */
+.card { 
+  border: 1px solid var(--border-color); 
+  border-left-width: 4px; /* Marginea din stânga mai groasă */
+  border-radius: var(--radius-md); 
+  padding: 1.25rem; 
+  display: flex; 
+  flex-direction: column; 
+  gap: 8px; 
+  background-color: var(--bg-card);
+}
+
+/* Culorile pentru marginea stângă */
+.border-red { border-left-color: var(--color-cutremur); }
+.border-orange { border-left-color: var(--color-inundatie); }
+.border-teal { border-left-color: var(--color-incendiu); }
+
+.card-badges {
+    display: flex;
+    gap: 8px;
+}
+
+.card h3 {
+    font-size: 1.1rem;
+    margin: 0;
+}
+
+.card .location,
+.card .time {
+    color: var(--text-muted);
+    font-size: 0.85rem;
+    margin: 0;
+}
+
+.btn-link {
+    margin-top: 8px;
+    color: var(--text-main);
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 0.9rem;
+}
+
+@media (max-width: 992px) {
+    .page-layout-split {
+        grid-template-columns: 1fr;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        margin-top: 0;
+    }
+
+    .map-container {
+        height: 40vh;
+        width: 100%;
+    }
+
+    .list-container {
+        height: auto;
+        width: 100%;
+        border-left: none;
+        border-top: 1px solid var(--border-color);
+    }
+}   
