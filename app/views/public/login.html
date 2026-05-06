@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ro">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login Autoritati - CoA</title>
+  <link rel="stylesheet" href="/public/css/login.css">
+</head>
+
+<body>
+
+    <main class="login-page">
+      <div class="login-card">
+
+        <h1>CoA</h1>
+        <h3 class="subtitle">Platformă de management al urgențelor</h3>
+       
+            <form action="login.php" method="POST"> 
+              
+                <div class="form-field">
+                    <label for="email_authority"> Email</label>
+                    <input type="email" id="email_authority" name="email_authority" required placeholder="email@autoritate.ro">
+                </div>
+                
+                <div class="form-field">
+                    <label for="password_authority">Parola</label>
+                    <input type="password" id="password_authority" name="password_authority" required placeholder="•••••••" >
+                </div>
+
+                <div class="form-field">
+                    <button type="submit"> AUTENTIFICARE</button>
+                </div>
+                
+             </form>
+
+            <p class="restricted-access">Acces restrictionat autoritatilor acreditate.</p>
+
+       </div>
+    </main>
+</body>
+
+</html>

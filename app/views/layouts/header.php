@@ -1,4 +1,4 @@
-a<nav class="navbar">
+<nav class="navbar">
   <div class="logo">
     <strong>CoA</strong> <span class="dot"></span>
   </div>
@@ -11,7 +11,9 @@ a<nav class="navbar">
     <li><a href="#" class="active">Hartă & Evenimente</a></li>
     <li><a href="#">Adăposturi</a></li>
     <li><a href="#">Alerte</a></li>
-    <li class="mobile-login"><button class="btn-login">Login</button></li>
+    <li class="mobile-login">
+      <button class="btn-login">Login</button>
+    </li>
   </ul>
 
   <div class="desktop-login">
