@@ -9,5 +9,8 @@ destinată atât autorităților, cât și publicului general.
 - Hartă: Leaflet.js + OpenStreetMap
 - Arhitectură: MVC
 
+##
+
 Gavril Olivia-Alexandra
-Zaharia Octav
+
+Zaharia Stefan Octavian
