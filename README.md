@@ -8,3 +8,6 @@ destinată atât autorităților, cât și publicului general.
 - Frontend: HTML + CSS + JavaScript vanilla
 - Hartă: Leaflet.js + OpenStreetMap
 - Arhitectură: MVC
+
+Gavril Olivia-Alexandra
+Zaharia Octav
