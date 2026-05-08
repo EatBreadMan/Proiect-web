@@ -8,9 +8,9 @@
   --border-color: #e2e8f0;
   
   /* Culori specifice pentru alerte */
-  --color-cutremur: #dc2626;   /* Roșu */
-  --color-inundatie: #d97706;  /* Portocaliu */
-  --color-incendiu: #0f766e;   /* Verde/Teal */
+  --color-activ: #dc2626;   /* Roșu */
+  --color-monotorizare: #d97706;  /* Portocaliu */
+  --color-rezolvat : #0f766e;   /* Verde/Teal */
   
   /* Dimensiuni globale */
   --nav-height: 70px;
@@ -29,7 +29,7 @@ body {
   color: var(--text-main);
   display: flex;
   flex-direction: column;
-  min-height: 100vh; /* Asigură că footer-ul stă jos chiar dacă pagina e goală */
+  min-height: 100vh; /* Asigură că footer-ul stă jos chiar dacă pagina e goala*/
 }
 
 
@@ -56,7 +56,7 @@ body {
 .logo .dot { 
   width: 8px; 
   height: 8px; 
-  background-color: var(--color-cutremur); 
+  background-color: var(--color-activ); 
   border-radius: 50%; 
 }
 
@@ -73,13 +73,14 @@ body {
   font-size: 0.95rem;
 }
 
-.btn-login { 
-  padding: 8px 24px; 
-  border: 1px solid var(--text-main); 
-  background: transparent; 
-  border-radius: var(--radius-md); 
-  cursor: pointer; 
+.btn-login {
+  padding: 8px 24px;
+  border: 1px solid var(--text-main);
+  background: transparent;
+  border-radius: var(--radius-md);
+  cursor: pointer;
   font-weight: 500;
+  text-decoration: none;
 }
 
 
@@ -124,12 +125,12 @@ body {
   font-weight: bold; 
 }
 
-.bg-red { background-color: var(--color-cutremur); }
-.bg-orange { background-color: var(--color-inundatie); }
-.bg-teal { background-color: var(--color-incendiu); }
+.bg-red { background-color: var(--color-activ); }
+.bg-orange { background-color: var(--color-monotorizare); }
+.bg-teal { background-color: var(--color-rezolvat); }
 
 .text-red { 
-  color: var(--color-cutremur); 
+  color: var(--color-activ); 
   font-size: 0.85rem; 
   font-weight: 500;
   margin-top: 4px;

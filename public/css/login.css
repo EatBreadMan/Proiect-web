@@ -1,0 +1,53 @@
+
+body {
+    background-color: #1E293B;
+    font-family: 'Inter', 'Segoe UI', sans-serif;
+}
+
+.login-page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.login-card {
+    text-align: center;
+    background-color: #fff;
+    border-radius: 10px;
+    width: 80%;
+    max-width: 520px;
+    padding: 5%;
+}
+
+h1 {
+    margin-bottom: 0%;
+}
+
+h1::after {
+    content: "•";
+    color: #BC2F2F;
+    font-size: 3rem;
+    padding-left: 2%;
+}
+
+.subtitle,
+.restricted-access {
+    color: #8E8E93;
+}
+
+.subtitle {
+    margin-top: 0%;
+    font-weight: 500;
+}
+
+.restricted-access {
+    font-weight: 300;
+}
+
+form {
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}

@@ -1,77 +1,122 @@
-/* --- Layout General Admin --- */
+/*DESIGN GENERAL ADMIN*/
+
+.logo {
+    color:#fff;
+    padding: 1rem;
+}
+
 .admin-layout {
-  display: flex;
-  height: 100vh; /* Ocupă tot ecranul pe înălțime */
-  overflow: hidden; /* Fără scroll pe toată pagina */
+    display: flex;
+    height: 100vh; 
 }
 
-/* --- Sidebar --- */
-.admin-sidebar {
-  width: 260px;
-  background-color: #0f172a; /* Slate 900 - Un fundal foarte închis pentru admin */
-  color: #f8fafc;
-  display: flex;
-  flex-direction: column;
-  border-right: 1px solid #1e293b;
+.sidebar-layout {
+    display: flex;
+    width: 20%;
+    height: 100vh;
+    background-color:#1E293B;
+    flex-direction: column; /*elementele stau unul sub celalalt */
 }
 
-.admin-brand {
-  height: var(--nav-height, 70px);
-  display: flex;
-  align-items: center;
-  padding: 0 1.5rem;
-  font-size: 1.25rem;
-  border-bottom: 1px solid #1e293b;
+
+.sidebar-list {
+    color: #fff;
+    display: flex;
+    border-top: 1px solid #334057;
+    border-bottom: 1px solid #334057;
+    flex-direction: column; 
 }
 
-/* Meniul de navigație */
-.admin-menu {
-  list-style: none;
-  padding: 1.5rem 0;
-  flex-grow: 1; /* Împinge butonul de logout în jos */
+
+.sidebar-list li a {
+    text-decoration: none; /*sa nu aiba linkurile underline*/
+    display: block;
+    padding: 0.75rem 1.5rem; 
+    color: #ffffff;
 }
 
-.admin-menu li a {
-  display: block;
-  padding: 0.75rem 1.5rem;
-  color: #cbd5e1;
-  text-decoration: none;
-  transition: background 0.2s, color 0.2s;
+.sidebar-list li a:hover{ /*+ avem */
+    background-color: #263245;
+    color: #fff;
 }
 
-/* Efectul de Hover și Pagina Activă */
-.admin-menu li a:hover,
-.admin-menu li a.active {
-  background-color: #1e293b;
-  color: #ffffff;
-  border-left: 4px solid #dc2626; /* Accent roșu (poți folosi var(--color-cutremur)) */
+.sidebar-list li a.active {
+    border-left: 3px solid #BC2F2F;
+    color: #fff;
 }
 
-/* Zona de Logout */
-.admin-logout {
-  padding: 1.5rem;
-  border-top: 1px solid #1e293b;
+.sidebar-list li a.active:hover {
+    border-left: 3px solid #ec4a4a;
+}
+
+.sidebar-footer {
+    margin-top: auto; 
+    padding: 1.5rem;
+    border-top: 1px solid #2d394d;
 }
 
 .btn-logout {
-  width: 100%;
-  padding: 10px;
-  background-color: transparent;
-  color: #f1f5f9;
-  border: 1px solid #334155;
-  border-radius: 8px;
-  cursor: pointer;
-  transition: background 0.2s;
+    color:#1E293B;
+    width: 100%;
+    font-size: 1rm;
+    padding: 0.6rem 1rem;
+    border: 1px solid #334155;
+    border-radius: 8px;
+
 }
 
-.btn-logout:hover {
-  background-color: #334155;
-}
-
-/* --- Conținutul Principal (Dreapta) --- */
 .admin-content {
-  flex-grow: 1; /* Ocupă tot spațiul rămas */
-  background-color: #f4f6f8;
-  padding: 2rem;
-  overflow-y: auto; /* Permite scroll DOAR în zona de conținut */
+    flex-grow: 1;
+    background-color: #efeeee;
+    padding: 2rem;
+    overflow-y: auto;
+     /*daca avem mult continut, sa apara automat un scroll bar in zona continutului*/
+}
+
+/*  design de la pagina primcipala*/
+.greet-user {
+     margin: 1%;
+}
+
+.greet-user p.current-date {
+    color: #8E8E93;
+}
+
+.status-cards {
+    display: flex;
+}
+
+.status-card {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    padding: 1%;
+    margin : 1%;
+    border-radius: 8px;
+    border: 1px solid #c8c8c8;
+    background-color: #fff;
+}
+
+.status-number{
+    font-size:1.5rem ;
+    font-weight: 600;
+}
+
+.status-label{
+     font-weight: 100;
+}
+
+.alert-banner {
+     border-radius: 8px;
+     background-color: #BC2F2F;
+     color: #fff;
+     padding: 1%;
+     margin: 1%;
+}
+
+.add-event-fast{
+    margin: 1%;
+    background-color: #fff;
+    padding: 2%;
+    border-radius: 8px;
 }
