@@ -5,8 +5,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>CoA - Hartă & Evenimente</title>
   
-  <link rel="stylesheet" href="/public/css/global.css">
-  <link rel="stylesheet" href="/public/css/map-page.css">
+  <link rel="stylesheet" href="css/global.css">
+  <link rel="stylesheet" href="css/map-page.css">
 </head>
 <body>
 
@@ -18,14 +18,16 @@
     <button class="menu-toggle" id="mobile-menu-btn">☰</button>
     
     <ul class="nav-links" id="nav-links">
-      <li><a href="#" class="active">Hartă & Evenimente</a></li>
+      <li><a href="#" class="active">Hartă & evenimente</a></li>
       <li><a href="#">Adăposturi</a></li>
       <li><a href="#">Alerte</a></li>
-      <li class="mobile-login"><button class="btn-login">Login</button></li>
+      <li class="mobile-login">
+        <a href="../app/views/public/login.html" class="btn-login">Login</a>
+      </li>
     </ul>
-    
+
     <div class="desktop-login">
-      <button class="btn-login">Login</button>
+      <a href="../app/views/public/login.html" class="btn-login">Login</a>
     </div>
   </nav>
 
@@ -109,6 +111,6 @@
     </div>
   </footer>
 
-  <script src="/public/js/main.js"></script>
+  <script src="js/main.js"></script>
 </body>
 </html>
