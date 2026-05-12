@@ -19,8 +19,6 @@
     width: 100%;
     box-sizing: border-box;
     border-radius: 8px;
-    border: 1px solid #616169;
-    outline-color: #576882;
     font-size: 1rem;
     color: #616169;
     padding: 0.80rem;
@@ -59,7 +57,7 @@
     font-weight: bold;
     cursor: pointer;
     font-size: 1rem;
-    padding-top: 0.2rem;
+    padding: 0.4rem;
     text-align: center;
 }
 

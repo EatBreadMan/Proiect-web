@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="ro">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Detalii eveniment - CoA ADMIN</title>
+
+  <link rel="stylesheet" href="/CoA-project/public/css/global.css">
+  <link rel="stylesheet" href="/CoA-project/public/css/forms.css">
+  <link rel="stylesheet" href="/CoA-project/public/css/admin.css">  
+  <link rel="stylesheet" href="/CoA-project/public/css/events.css">
+</head>
+
+<body>
+    <div class="admin-layout">
+          <?php include '../layouts/sidebar.php'; 
+                 include 'modal-event.php'; ?>
+
+        <main class="events-content">
+
+            <!-- buton de mers inapoi la evenimente -->
+            <nav class="inapoi-btn">
+                <a href="events.php">Evenimente</a>
+                <span> > </span>
+                <span>Cutremur  Vrancea</span>
+            </nav>
+
+            <!-- Header eveniment -->
+            <div class="event-detail-header">
+                <div class="event-detail-left">
+                    <span class="badge bg-red">ACTIV</span>
+                    <h1>Cutremur M4.2 Vrancea</h1>
+                    <p class="current-date">9 Aprilie 2026, 14:23 EST</p>
+                </div>
+                <div class="event-detail-actions">
+                    <button class="btn-cap"> Trimite alerta CAP</button>
+                    <button class="btn-edit" onclick="openModal('modal-add', 'edit')"> Editeaza</button>
+                    <button class="btn-delete" onclick="confirmDelete(this); return false;" > Sterge</button>
+                </div>
+            </div>
+
+            <!-- Stat cards dark -->
+            <div class="status-cards">
+                <div class="status-card dark">
+                    <span class="status-label">Magnitudine</span>
+                    <span class="status-number">4.2 Mw</span>
+                </div>
+                <div class="status-card dark">
+                    <span class="status-label">Adancime</span>
+                    <span class="status-number">127 km</span>
+                </div>
+                <div class="status-card dark">
+                    <span class="status-label">Zone afectate</span>
+                    <span class="status-number">12 judete</span>
+                </div>
+            </div>
+
+            <!-- Harta + paneluri -->
+            <div class="event-detail-body">
+
+                <!-- Harta -->
+                <div class="event-map">
+                    <!-- Leaflet.js va fi initializat aici -->
+                     
+                    <div class="map-footer">
+                        <span> — Raza impact: ~80km</span>
+                    </div>
+                </div>
+
+                <!-- Paneluri dreapta -->
+                <div class="event-detail-panels">
+
+                    <div class="detail-panel cap-panel">
+                        <h3>Alerta CAP trimisa</h3>
+                        <p class="current-date"> 9 Aprilie 2026, 14:25</p>
+                        <p>Destinatari: 2.4M utilizatori</p>
+                        <a href="#" class="btn-link"> Vezi detalii CAP -> </a>
+                    </div>
+
+                    <div class="detail-panel">
+                        <h3>Descriere</h3>
+                        <p>Seism .............. </p>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- Tabel adaposturi recomandate -->
+            <div class="shelters-section">
+                <h2>Adaposturi recomandate in zona</h2>
+                <table class="list-events">
+                    <thead>
+                        <tr>
+                            <th scope="col">Nume</th>
+                            <th scope="col">Localitate</th>
+                            <th scope="col">Capacitate</th>
+                            <th scope="col">Status</th>
+                            <th scope="col">Ruta</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Scoala Generala Nr. 5</td>
+                            <td>Focsani</td>
+                            <td>120/200</td>
+                            <td><span class="badge bg-teal">Disponibil</span></td>
+                            <td><a href="#" class="btn-link">Vezi ruta</a></td>
+                        </tr>
+                        <tr>
+                            <td>Sala Sporturilor Central</td>
+                            <td>Focsani</td>
+                            <td>45/100</td>
+                            <td><span class="badge bg-orange">Partial</span></td>
+                            <td><a href="#" class="btn-link">Vezi ruta</a></td>
+                        </tr>
+                        <tr>
+                            <td>Centrul Comunitar Sud</td>
+                            <td>Braila</td>
+                            <td>85/85</td>
+                            <td><span class="badge bg-red">Plin</span></td>
+                            <td><a href="#" class="btn-link">Vezi ruta</a></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+        </main>
+    </div>
+
+    <script src="/CoA-project/public/js/main.js"></script>
+</body>
+
+</html>

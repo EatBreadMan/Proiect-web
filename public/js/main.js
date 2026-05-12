@@ -56,3 +56,33 @@ document.addEventListener('DOMContentLoaded', function() {
   }
   
 });
+
+//pentru add event-> se deschide modular un form 
+
+
+function closeModal(id) {
+    document.getElementById(id).style.display = 'none';
+}
+
+function openModal(id, mode) {
+    document.getElementById(id).style.display = 'flex';
+    
+    if (mode==='edit') {
+        document.getElementById('modal-title').textContent='Editeaza eveniment';
+        document.getElementById('modal-btn').textContent='Salveaza modificarile';
+    }else {
+        document.getElementById('modal-title').textContent ='Adauga eveniment nou';
+        document.getElementById('modal-btn').textContent ='Salveaza evenimentul';
+    }
+}
+
+function confirmDelete(btn) {
+    const td = btn.parentElement;
+    td.innerHTML = `
+        <div class="inline-table">
+          <span >Sigur?</span>
+          <a href="#" class="delete">Da </a>
+          <a href="#" onclick="location.reload()">Nu</a>
+        </div>
+    `;
+}

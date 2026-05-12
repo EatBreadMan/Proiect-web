@@ -1,0 +1,316 @@
+
+/* ________________ EVENT PAGE DESIGN  ____________________*/
+
+.header-events{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.add-event-btn {
+    padding: 0.75rem;
+    background-color: #BC2F2F;
+    border: 1px solid #8e2828;
+    border-radius: 8px;
+    color: #fff;
+    font-weight: bold;
+    font-size: 1rem;
+    padding: 0.9rem;
+    text-align: center;
+}
+
+.events-content {
+    flex-grow: 1;
+    background-color: #efeeee;
+    padding: 2rem;
+    overflow-y: auto;
+}
+
+.filter-event-banner {
+    display: flex;
+    color: #1E293B;
+    font-weight: 700;
+
+}
+
+.filter-event-field{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 2%;
+    margin : 1%;
+    border-radius: 8px;
+    border: 1px solid #c8c8c8;
+    background-color: #fff;
+
+}
+
+/*table design */
+.list-events{
+    border-radius: 8px;
+    width: 100%;
+     background-color: #fff;
+     text-align: center;
+      margin: 1rem 0;
+
+}
+
+.list-events th,
+.list-events td {
+    padding: 0.75rem 1rem;
+    text-align: left;
+    border-bottom: 1px solid #e2e8f0;
+}
+
+.list-events thead th {
+    background-color: #f7f7f7;
+    font-weight: 600;
+    color: #57595b;
+    font-size: 0.85rem;
+}
+
+.list-events tbody tr:hover {
+    background-color: #f8fafc;
+}
+
+.list-events .actions a {
+    font-weight:600;
+    color:#043582 ;
+    text-decoration: none;
+    margin: 0.4rem;
+    border-radius: 8px;
+     border: 1px solid #c8c8c8;
+     padding: 0.3rem;
+}
+
+.list-events .actions .delete {
+   color: #BC2F2F;
+   border: 1px solid #BC2F2F;
+}
+
+/*tabel footer*/
+
+.pagination {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5rem 1rem;
+}
+
+.pagination-numbers {
+    display: flex;
+    gap: 0.5rem;
+}
+
+.pagination-num {
+    width: 32px;
+    height: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 6px;
+    text-decoration: none;
+    color: #1e293b;
+}
+
+.pagination-num.active {
+    background-color: #1e293b;
+    color: #fff;
+}
+
+.pagination-btn {
+    text-decoration: none;
+    color: #1e293b;
+}
+
+/*pagina adaugare evenimente, pe deasupra paginii */
+
+.modal-overlay {
+    position: fixed;      /* fix pe ecran */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);  /* fundalul din spate devine semitransparent */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;        /* deasupra tuturor elementelor */
+}
+
+.modal-card {
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 2rem;
+    width: 90%;
+    max-width: 560px;
+    max-height: 85vh;     /* nu depaseste ecranul */
+    overflow-y: auto;     /* scroll doar daca e prea lung */
+}
+
+.modal-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1.5rem;
+}
+
+.modal-close {
+    background: none;
+    border: none;
+    font-size: 1.2rem;
+    cursor: pointer;
+    color: #64748b;
+}
+
+.modal-footer {
+    display: flex;
+    justify-content: flex-end;
+    gap: 1rem;
+    margin-top: 1.5rem;
+}
+
+.btn-cancel {
+    padding: 0.75rem 1.5rem;
+    border: 1px solid #c8c8c8;
+    border-radius: 8px;
+    background: transparent;
+    cursor: pointer;
+}
+
+.coords-row {
+    display: flex;
+    gap: 1rem;
+}
+
+/*event details */
+/* Event detail page */
+.inapoi-btn {
+    font-size: 0.9rem;
+    color: #64748b;
+    margin-bottom: 1rem;
+}
+
+.inapoi-btn a {
+    color: #64748b;
+    text-decoration: none;
+}
+
+.inapoi-btn a:hover {
+    color: #1e293b;
+}
+
+.event-detail-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 1.5rem;
+}
+
+.event-detail-left {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.event-detail-actions {
+    display: flex;
+    gap: 0.75rem;
+    align-items: center;
+}
+
+.btn-cap {
+    background-color: #BC2F2F;
+    color: #fff;
+    border: none;
+    padding: 0.6rem 1rem;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+.btn-edit {
+    background: transparent;
+    border: 1px solid #c8c8c8;
+    padding: 0.6rem 1rem;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.btn-delete ,
+.inline-table{
+    background: transparent;
+    border: 1px solid #BC2F2F;
+    color: #BC2F2F;
+    padding: 0.6rem 1rem;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.status-card.dark {
+    background-color: #1E293B;
+    color: #fff;
+}
+
+.status-card.dark .status-label {
+    color: #94a3b8;
+}
+
+.status-card.dark .status-number {
+    color: #fff;
+}
+
+.event-detail-body {
+    display: flex;
+    gap: 1rem;
+    margin: 1rem 0;
+}
+
+.event-map {
+    flex: 2;
+    background-color: #2c3e50;
+    border-radius: 8px;
+    min-height: 400px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    color: #fff;
+}
+
+
+.map-footer {
+    padding: 0.75rem 1rem;
+    background-color: rgba(0,0,0,0.3);
+    border-radius: 0 0 8px 8px;
+    font-size: 0.85rem;
+}
+
+.event-detail-panels {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.detail-panel {
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 1.25rem;
+    border: 1px solid #e2e8f0;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.cap-panel {
+    border-left: 4px solid #2E7D6E;
+}
+
+.list-events .actions .export {
+    color: #0f766e;
+    border: 1px solid #0f766e;
+}
+ 
