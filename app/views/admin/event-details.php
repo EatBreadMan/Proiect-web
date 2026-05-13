@@ -23,7 +23,7 @@
             <nav class="inapoi-btn">
                 <a href="events.php">Evenimente</a>
                 <span> > </span>
-                <span>Cutremur  Vrancea</span>
+                <span>Cutremur  .... </span>
             </nav>
 
             <!-- Header eveniment -->
@@ -31,7 +31,7 @@
                 <div class="event-detail-left">
                     <span class="badge bg-red">ACTIV</span>
                     <h1>Cutremur M4.2 Vrancea</h1>
-                    <p class="current-date">9 Aprilie 2026, 14:23 EST</p>
+                    <p class="current-date">9 Aprilie 2089, 14:23 EST</p>
                 </div>
                 <div class="event-detail-actions">
                     <button class="btn-cap"> Trimite alerta CAP</button>
@@ -108,7 +108,7 @@
                             <td><a href="#" class="btn-link">Vezi ruta</a></td>
                         </tr>
                         <tr>
-                            <td>Sala Sporturilor Central</td>
+                            <td>ceva sala... </td>
                             <td>Focsani</td>
                             <td>45/100</td>
                             <td><span class="badge bg-orange">Partial</span></td>
@@ -116,7 +116,7 @@
                         </tr>
                         <tr>
                             <td>Centrul Comunitar Sud</td>
-                            <td>Braila</td>
+                            <td> judet </td>
                             <td>85/85</td>
                             <td><span class="badge bg-red">Plin</span></td>
                             <td><a href="#" class="btn-link">Vezi ruta</a></td>

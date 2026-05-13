@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Alerte CAP - CoA ADMIN</title>
+    <title> Alerte CAP - CoA ADMIN</title>
 
     <link rel="stylesheet" href="/CoA-project/public/css/global.css">
     <link rel="stylesheet" href="/CoA-project/public/css/forms.css">
@@ -53,28 +53,28 @@
                             <label for="cap_urgency">Urgență</label>
                             <select id="cap_urgency" name="cap_urgency" required>
                                 <option value="">Selectează</option>
-                                <option value="Immediate">Immediate</option>
-                                <option value="Expected">Expected</option>
-                                <option value="Future">Future</option>
+                                <option value="Immediate">Imediagt</option>
+                                <option value="Expected">Asteptat</option>
+                                <option value="Future">In viitor</option>
                             </select>
                         </div>
                         <div class="form-field" style="flex:1">
                             <label for="cap_severity">Severitate</label>
                             <select id="cap_severity" name="cap_severity" required>
                                 <option value="">Selectează</option>
-                                <option value="Extreme">Extreme</option>
-                                <option value="Severe">Severe</option>
-                                <option value="Moderate">Moderate</option>
-                                <option value="Minor">Minor</option>
+                                <option value="Extreme">Extrema</option>
+                                <option value="Severe">Severa</option>
+                                <option value="Moderate">Moderata</option>
+                                <option value="Minor">Minora</option>
                             </select>
                         </div>
                         <div class="form-field" style="flex:1">
                             <label for="cap_certainty">Certitudine</label>
                             <select id="cap_certainty" name="cap_certainty" required>
                                 <option value="">Selectează</option>
-                                <option value="Observed">Observed</option>
-                                <option value="Likely">Likely</option>
-                                <option value="Possible">Possible</option>
+                                <option value="Observed">Observat</option>
+                                <option value="Likely">Probabil</option>
+                                <option value="Possible">Posibil</option>
                             </select>
                         </div>
                     </div>
@@ -93,14 +93,12 @@
 
                     <div class="form-field">
                         <label for="cap_instruction">Instrucțiuni pentru populație</label>
-                        <textarea id="cap_instruction" name="cap_instruction" rows="3"
-                            placeholder="ex: ....... "></textarea>
+                        <textarea id="cap_instruction" name="cap_instruction" rows="3" placeholder="ex: ....... "></textarea>
                     </div>
 
                     <div class="form-field">
                         <label for="cap_area">Zonă afectată</label>
-                        <input type="text" id="cap_area" name="cap_area"
-                            placeholder="ex:...... ">
+                        <input type="text" id="cap_area" name="cap_area" placeholder="ex:......">
                     </div>
 
                     <div class="modal-footer">

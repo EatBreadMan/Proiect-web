@@ -86,3 +86,18 @@ function confirmDelete(btn) {
         </div>
     `;
 }
+
+
+  function openUserModal(mode) {
+            document.getElementById('modal-user').style.display = 'flex';
+
+            if (mode === 'edit') {
+                document.getElementById('modal-user-title').textContent = 'Editează utilizator';
+                document.getElementById('modal-user-btn').textContent = 'Salvează modificările';
+                document.getElementById('password-field').style.display = 'none';
+            } else {
+                document.getElementById('modal-user-title').textContent = 'Adaugă utilizator';
+                document.getElementById('modal-user-btn').textContent = 'Salvează';
+                document.getElementById('password-field').style.display = 'flex';
+            }
+        }

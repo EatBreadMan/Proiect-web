@@ -80,9 +80,9 @@
                         <p><strong>ID:</strong> CAP-2026-04-09-001</p>
                         <p><strong>Tip mesaj:</strong> Alert</p>
                         <p><strong>Status:</strong> Actual</p>
-                        <p><strong>Categorie:</strong> Geo</p>
-                        <p><strong>Zonă afectată:</strong> Vrancea, Bacău, Galați</p>
-                        <p><strong>Trimis la:</strong> 9 Apr 2026, 14:25</p>
+                        <p><strong>Categorie:</strong> Geo </p>
+                        <p><strong>Zonă afectată:</strong> .... localitati </p>
+                        <p><strong>Trimis la:</strong> 89 Apr 2026, 00:25</p>
                     </div>
                 </div>
 
