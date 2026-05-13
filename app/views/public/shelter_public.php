@@ -83,8 +83,8 @@
                         <span class="badge ${shelter.badgeClass}">${shelter.type}</span>
                     </div>
                     <h3>${shelter.name}</h3>
-                    <p class="location">📍 ${shelter.address}</p>
-                    <p class="time">ℹ️ ${shelter.details}</p>
+                    <p class="location"> ⚲  ${shelter.address}</p>
+                    <p class="time">🛈 ${shelter.details}</p>
                     <a href="#" class="btn-link" onclick="map.setView([${shelter.lat}, ${shelter.lng}], 16); return false;">Vezi pe hartă &rarr;</a>
                 </div>
             `;
