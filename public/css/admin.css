@@ -1,4 +1,8 @@
 /*DESIGN GENERAL ADMIN*/
+input, select, textarea, button {
+    font-family: inherit;
+    border: 1px solid #c8c8c8;
+}
 
 .logo {
     color:#fff;
@@ -15,7 +19,7 @@
     width: 20%;
     height: 100vh;
     background-color:#1E293B;
-    flex-direction: column; /*elementele stau unul sub celalalt */
+    flex-direction: column;  /*elementele stau unul sub celalalt */
 }
 
 
@@ -40,12 +44,12 @@
     color: #fff;
 }
 
-.sidebar-list li a.active {
+.sidebar-list li a {
     border-left: 3px solid #BC2F2F;
     color: #fff;
 }
 
-.sidebar-list li a.active:hover {
+.sidebar-list li a:hover {
     border-left: 3px solid #ec4a4a;
 }
 
@@ -62,7 +66,6 @@
     padding: 0.6rem 1rem;
     border: 1px solid #334155;
     border-radius: 8px;
-
 }
 
 .admin-content {
@@ -93,7 +96,6 @@
     padding: 1%;
     margin : 1%;
     border-radius: 8px;
-    border: 1px solid #c8c8c8;
     background-color: #fff;
 }
 
@@ -119,4 +121,10 @@
     background-color: #fff;
     padding: 2%;
     border-radius: 8px;
+}
+
+.btn-link {
+    text-decoration: none;
+    color: #3107bc;
+
 }

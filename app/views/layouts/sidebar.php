@@ -5,19 +5,19 @@
     </div>
 
     <nav>
-        <ul class="sidebar-list">
-            <li><a href="#" class="active">Pagina Principala</a></li>
-            <li><a href="#" class="active">Evenimente </a></li>
-            <li><a href="#" class="active">Adaposturi </a></li>
-            <li><a href="#" class="active">Alerte CAP </a></li>
-            <li><a href="#" class="active">Utilizatori </a></li>
-            <li><a href="#" class="active">Import/Export </a></li>
+            <ul class="sidebar-list">
+            <li><a href="/CoA-project/app/views/admin/dashboard.php">Dashboard</a></li>
+            <li><a href="/CoA-project/app/views/admin/events.php">Evenimente</a></li>
+            <li><a href="/CoA-project/app/views/admin/shelters.php">Adaposturi</a></li>
+            <li><a href="/CoA-project/app/views/admin/alerts.php">Alerte CAP</a></li>
+            <li><a href="/CoA-project/app/views/admin/users.php">Utilizatori</a></li>
+            <li><a href="/CoA-project/app/views/admin/import-export.php">Import/Export</a></li>
         </ul>
     </nav>
 
     <div class="sidebar-footer" >
 <!--Deconectarea schimba starea serverului-> distruge sesiunea => trebuie facut cu POST -->
-      <form action="/logout" method="POST">
+      <form action="../admin/logout.php" method="POST">
          <button class="btn-logout" type="submit">Deconectare</button>
       </form>
     </div>

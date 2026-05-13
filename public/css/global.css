@@ -32,6 +32,10 @@ body {
   min-height: 100vh; /* Asigură că footer-ul stă jos chiar dacă pagina e goala*/
 }
 
+a {
+  text-decoration: none;
+}
+
 
 .navbar {
   display: flex; 
@@ -197,4 +201,12 @@ body {
     text-align: center; 
     gap: 1rem; 
   }
+}
+
+select{
+    margin: 0.2rem;
+    border-radius: 8px;
+    border: 1px solid #adadad;
+    padding: 0.4rem;
+    background-color: #fff;
 }
